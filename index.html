@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Math Quiz || Wellcome</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    </head>
+     <body>
+        <h1 id="title" >Math Quiz</h1>
+        <div id="button"><a href="#popup">THE RULES</a></div>
+    
+    <div id="popup">
+    	<div class="window">
+        	<a href="#" class="close-button" title="Close">X</a>
+            <h2>Welcome Genius!!</h2>
+            <br>
+            <h3>If you can answer the question correctly you'll get 100 point for each question , but if you're answer is wrong you got 0 point. if you dont know the answer you can pass it , but your score will be minus 5 for each question you pass.</h3>
+            <form >
+                    Please enter your name
+                    <input type="text" class="textarea" id= "name" autocomplete="off">
+                    <input type="button" value="submit"  onclick = "Player()">
+            </div>
+        </div>
+    </div>
+      <div class="quiz">
+          <h2>LET'S START THE QUIZ !!! </h2> 
+          <input type="text" class="textarea" id="Number1" readonly>
+          <input type="text" class="textarea" id="operasimath" readonly>
+          <input type="text" class="textarea" id="Number2" readonly>
+        </div>
+        <h3>=</h3>
+        <form action="#" onsubmit="getAnsswer()">
+                <input type="text" class="textarea" id= "hasil" autocomplete="off">
+        </form>
+          <div id="proses">
+              <input type="button"  id="mulai" value="mulai"  onclick="generateAngka()">
+              <input type="button" id="jawab" value="jawab"  onclick = "getAnsswer()">
+              <input type="button" id="pass" value="pass"  onclick = "passQuestion()">
+            </div>
+        <script src="quiz.js" ></script>
+    </body>
+</html>
+
