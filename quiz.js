@@ -1,13 +1,11 @@
 var operation = "+-x:"
-var memoryOfPlayers = []
 var myScore = 0
 var pass = 0
+var obj = {}
 function Player(){
-    var obj = {}
     obj.name = document.getElementById("name").value
     obj.score = myScore
     console.log(obj)
-    memoryOfPlayers.push(obj)
     return resetName()
 }
 function restartTheQuiz(){
@@ -26,7 +24,8 @@ function passQuestion(){
         return generateAngka()
 
     }else if(pass > 5){
-        alert("nyawa mu habis" + " " + "score : " + String(myScore))
+        alert("nyawa mu habis" )
+        alert("NAMA: " + obj.name + " " + "SCORE: " + obj.score)
         return restartTheQuiz()
     }
 }
