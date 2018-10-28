@@ -53,12 +53,10 @@ function getAnsswer(operator){
         // alert("tambah")
 
         var tambah = Number(document.getElementById("Number1").value) + Number(document.getElementById("Number2").value )
-        // console.log(Number(document.getElementById("Number1").value))
-        // console.log(tambah)
-
+        
         if(Number(document.getElementById("hasil").value) === tambah ){
             myScore+= 100
-            alert("benar")
+            alert("Wah kamu hebat")
             return resetInput()
         }else{
             alert("coba lagi ya!!!")
@@ -67,11 +65,11 @@ function getAnsswer(operator){
     }else if(document.getElementById("operasimath").value === "-"){
         
         var kurang = Number(document.getElementById("Number1").value) - Number(document.getElementById("Number2").value)
-
+        
         if(Number(document.getElementById("hasil").value) === kurang){
 
-            alert("benar")
             myScore+= 100
+            alert("Wah kamu hebat")
             return resetInput()
         }else{
             alert("coba lagi ya!!!")
@@ -83,8 +81,8 @@ function getAnsswer(operator){
         
         if(Number(document.getElementById("hasil").value ) === kali){
 
-            alert("benar")
             myScore+= 100
+            alert("Wah kamu hebat")
             return resetInput()
 
         }else{
@@ -98,8 +96,8 @@ function getAnsswer(operator){
 
         if(Number(document.getElementById("hasil").value) === bagi){
 
-            alert(benar)
             myScore+= 100
+            alert("Wah kamu hebat")
             return resetInput()
         }else{
             alert("coba lagi ya!!!")
