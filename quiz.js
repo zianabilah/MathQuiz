@@ -21,9 +21,10 @@ function passQuestion(){
     if(pass <= 5){
         myScore -= 10
         pass++
-        return generateAngka()
+        return resetInput()
 
     }else if(pass > 5){
+        obj.score = myScore
         alert("nyawa mu habis" )
         alert("NAMA: " + obj.name + " " + "SCORE: " + obj.score)
         return restartTheQuiz()
@@ -52,11 +53,11 @@ function getAnsswer(operator){
     if( document.getElementById("operasimath").value === "+"){
         // alert("tambah")
 
-        var tambah = Number(document.getElementById("Number1").value) + Number(document.getElementById("Number2").value )
+        var tambah = Number(document.getElementById("Number2").value) + Number(document.getElementById("Number1").value )
         
         if(Number(document.getElementById("hasil").value) === tambah ){
-            myScore+= 100
             alert("Wah kamu hebat")
+            myScore+= 100
             return resetInput()
         }else{
             alert("coba lagi ya!!!")
@@ -64,12 +65,12 @@ function getAnsswer(operator){
         }
     }else if(document.getElementById("operasimath").value === "-"){
         
-        var kurang = Number(document.getElementById("Number1").value) - Number(document.getElementById("Number2").value)
+        var kurang = Number(document.getElementById("Number2").value) - Number(document.getElementById("Number1").value)
         
         if(Number(document.getElementById("hasil").value) === kurang){
 
-            myScore+= 100
             alert("Wah kamu hebat")
+            myScore+= 100
             return resetInput()
         }else{
             alert("coba lagi ya!!!")
@@ -77,12 +78,12 @@ function getAnsswer(operator){
         }
     }else if( document.getElementById("operasimath").value === "x"){
 
-        var kali = Number(document.getElementById("Number1").value) * Number(document.getElementById("Number2").value)
+        var kali = Number(document.getElementById("Number2").value) * Number(document.getElementById("Number1").value)
         
         if(Number(document.getElementById("hasil").value ) === kali){
 
-            myScore+= 100
             alert("Wah kamu hebat")
+            myScore+= 100
             return resetInput()
 
         }else{
@@ -92,12 +93,12 @@ function getAnsswer(operator){
         }
     }else if(document.getElementById("operasimath").value === ":"){
 
-        var bagi = Number(document.getElementById("Number1").value) / Number(document.getElementById("Number2").value)
+        var bagi = Number(document.getElementById("Number2").value) / Number(document.getElementById("Number1").value)
 
         if(Number(document.getElementById("hasil").value) === bagi){
 
-            myScore+= 100
             alert("Wah kamu hebat")
+            myScore+= 100
             return resetInput()
         }else{
             alert("coba lagi ya!!!")
